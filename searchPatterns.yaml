@@ -1,0 +1,70 @@
+sinuses: &sinuses
+  - Right maxillary sinus
+  - Right sphenoid sinus
+  - Right ethmoid air cells
+  - Right frontal sinus
+  - Left frontal sinus
+  - Left ethmoid air cells
+  - Left sphenoid sinus
+  - Left maxillary sinus
+
+upper_facial_bones: &upper_facial_bones
+  - Right zygomatic arch
+  - Left zygomatic arch
+  - Nasal bones
+  - Right lamina papyracea
+  - Left lamina papyracea
+  - Right frontal calvarium
+  - Left frontal calvarium
+
+facial_skin: &facial_skin
+  - Right lateral facial skin
+  - Right anterior facial skin
+  - Left anterior facial skin
+  - Left lateral facial skin
+
+orbits: &orbits
+  - Right globe and lens
+  - Right lacrimal system
+  - Right orbital fat
+  - Right orbital walls
+  - Right extraocular muscles
+  - Right ophthalmic artery
+  - Right superior ophthalmic vein
+  - Right optic nerve
+  - Left globe and lens
+  - Left lacrimal system
+  - Left orbital fat
+  - Left orbital walls
+  - Left extraocular muscles
+  - Left ophthalmic artery
+  - Left superior ophthalmic vein
+  - Left optic nerve
+
+nasal_cavity: &nasal_cavity
+  - Right middle turbinate
+  - Left middle turbinate
+  - Right inferior turbinate
+  - Left inferior turbinate
+  - Hard palate
+  - Nasal septum
+
+nasopharynx: &nasopharynx
+  - Right eustachian tube
+  - Right torus tubarius
+  - Right fossa of Rosenmueller
+  - Left eustachian tube
+  - Left torus tubarius
+  - Left fossa of Rosenmueller
+
+studies:
+  var1:
+    - *sinuses
+    - *upper_facial_bones
+    - *orbits
+    - just some test in var1
+  var2:
+    - *sinuses
+    - *facial_skin
+    - just some test in var2
+    - *orbits
