@@ -1,70 +1,424 @@
 sinuses: &sinuses
-  - Right maxillary sinus
-  - Right sphenoid sinus
-  - Right ethmoid air cells
-  - Right frontal sinus
-  - Left frontal sinus
-  - Left ethmoid air cells
-  - Left sphenoid sinus
-  - Left maxillary sinus
+  - Right sinuses
+  - Maxillary
+  - Sphenoid
+  - Ethmoid
+  - Frontal
+  - Left sinuses
+  - Frontal
+  - Ethmoid
+  - Sphenoid
+  - Maxillary
 
-upper_facial_bones: &upper_facial_bones
-  - Right zygomatic arch
-  - Left zygomatic arch
+facial_bones: &facial_bones
+  - Right facial bones
+  - Zygomatic arch
+  - Lamina papyracea
+  - Frontal bone
+  - Left facial bones
+  - Frontal bone
+  - Lamina papyracea
+  - Zygomatic arch
   - Nasal bones
-  - Right lamina papyracea
-  - Left lamina papyracea
-  - Right frontal calvarium
-  - Left frontal calvarium
 
 facial_skin: &facial_skin
-  - Right lateral facial skin
-  - Right anterior facial skin
-  - Left anterior facial skin
-  - Left lateral facial skin
+  - Right face
+  - Lateral
+  - Anterior
+  - Left face
+  - Anterior
+  - Lateral
 
 orbits: &orbits
-  - Right globe and lens
-  - Right lacrimal system
-  - Right orbital fat
-  - Right orbital walls
-  - Right extraocular muscles
-  - Right ophthalmic artery
-  - Right superior ophthalmic vein
-  - Right optic nerve
-  - Left globe and lens
-  - Left lacrimal system
-  - Left orbital fat
-  - Left orbital walls
-  - Left extraocular muscles
-  - Left ophthalmic artery
-  - Left superior ophthalmic vein
-  - Left optic nerve
+  - Right orbit
+  - Globe
+  - Lacrimal
+  - Fat
+  - Walls
+  - EOMs
+  - Artery
+  - Vein
+  - Nerve
+  - Left orbit
+  - Globe
+  - Lacrimal
+  - Fat
+  - Walls
+  - EOMs
+  - Artery
+  - Vein
+  - Nerve
 
 nasal_cavity: &nasal_cavity
-  - Right middle turbinate
-  - Left middle turbinate
-  - Right inferior turbinate
-  - Left inferior turbinate
+  - Turbinates
   - Hard palate
   - Nasal septum
 
 nasopharynx: &nasopharynx
-  - Right eustachian tube
-  - Right torus tubarius
-  - Right fossa of Rosenmueller
-  - Left eustachian tube
-  - Left torus tubarius
-  - Left fossa of Rosenmueller
+  - Right nasopharynx
+  - Left nasopharynx
 
+madible: &mandible
+  - Right mandible
+  - TMJ
+  - Ramus
+  - Body
+  - Left mandible
+  - Body
+  - Ramus
+  - TMJ
+
+oral_cavity: &oral_cavity
+  - Right teeth
+  - Maxillary
+  - Mandibular
+  - Left teeth
+  - Mandibular
+  - Maxillary
+  - Right gingiva
+  - Maxillary
+  - Mandibular
+  - Left gingiva
+  - Maxillary
+  - Mandibular
+  - Anterior tongue
+
+oropharynx: &oropharynx
+  - Right palatine tonsil
+  - Left palatine tonsil
+  - Tongue base
+  - Valleculae
+  - Retropharynx
+
+hypopharynx: &hypopharynx
+  - Epiglottis
+  - Right aryepiglottic fold
+  - Left aryepiglottic fold
+  - Right pyriform sinus
+  - Left pyriform sinus
+  - Retropharynx
+  - Esophagus
+
+larynx: &larynx
+  - False cords
+  - True cords
+  - Cricoid cartilage
+  - Laryngeal ventricles
+
+trachea: &trachea
+  - Trachea
+  - Right mainstem bronchus
+  - Left maintsem bronchus
+
+thyroid: &thyroid
+  - Right thyroid gland
+  - Left thyroid gland
+  - Right thyroid cartilage
+  - Left thyroid cartilage
+
+salivary_glands: &salivary_glands
+  - Right salivary glands
+  - Parotid
+  - Submandibular
+  - Left salivary glands
+  - Submandibular
+  - Parotid
+
+masticator_spaces: &masticator_spaces
+  - Right masticator space
+  - Masseter
+  - Temporalis
+  - Lateral pterygoid
+  - Medial pterygoid
+  - Left masticator space
+  - Masseter
+  - Temporalis
+  - Lateral pterygoid
+  - Medial pterygoid
+
+parapharyngeal_spaces: &parapharyngeal_spaces
+  - Right parapharyngeal fat
+  - Left parapharyngeal fat
+
+cervical_lymph_nodes: &cervical_lymph_nodes
+  - 1A
+  - Right nodes
+  - 1B
+  - 2
+  - 3
+  - 4
+  - 5a
+  - 5b
+  - Left nodes
+  - 1A
+  - 2
+  - 3
+  - 4
+  - 5a
+  - 5b
+  - 6
+  - Mediastinal nodes
+  - Retropharyngeal nodes
+
+extracranial_arteries: &extracranial_arteries
+  - Aortic arch
+  - Brachiocephalic artery
+  - Right subclavian artery
+  - Left subclavian artery
+  - Right vertebral artery
+  - Left vertebral artery
+  - Right CCA
+  - Right ICA
+  - Left ICA
+  - Left CCA
+
+extracranial_veins: &extracranial_veins
+  - SVC
+  - Right brachiocephalic vein
+  - Right subclavian vein
+  - Left brachiocephalic vein
+  - Left subclavian vein
+  - Right IJV
+  - Left IJV
+
+cervical_spine: &cervical_spine
+  - Craniocervical junction
+  - Alignment
+  - Bones
+  - Intervertebral discs
+  - Spinal canal and neural foramina
+
+lung_apices: &lung_apices
+  - Right chest
+  - Anterior chest wall
+  - Axilla
+  - Back
+  - Humerus
+  - Scapula
+  - Clavicle
+  - Ribs
+  - Left chest
+  - Anterior chest wall
+  - Axilla
+  - Back
+  - Humerus
+  - Scapula
+  - Clavicle
+  - Ribs
+  - Right lung
+  - Left lung
+
+extracranial_soft_tissues: &extracranial_soft_tissues
+  - Right ear
+  - Right EAC
+  - Right parietal scalp
+  - Left ear
+  - Left EAC
+  - Left parietal scalp
+  - Occipital scalp
+
+calvarium_and_temporal_bones: &calvarium_and_temporal_bones
+  - Right parietal calvarium
+  - Left parietal calvarium
+  - Occipital calvarium
+  - Right
+  - Mastoid air cells
+  - Middle ear cavity
+  - Cochlea
+  - Semicircular canals
+  - Vestibular acqueduct
+  - Petrous apex
+  - Left
+  - Mastoid air cells
+  - Middle ear cavity
+  - Cochlea
+  - Semicircular canals
+  - Vestibular acqueduct
+  - Petrous apex
+  - Clivus
+
+basal_cisterns: &basal_cisterns
+  - Interpeduncular cistern
+  - Prepontine cistern
+  - Foramen magnum
+  - Ambient cisterns
+  - Quadrigeminal cistern
+
+extraaxial_spaces_axial: &extraaxial_spaces_axial
+  - Right Sylvian fissure
+  - Left Sylvian fissure
+  - Anterior falx
+  - Posterior falx
+  - Right posterior region
+  - Right middle region
+  - Right anterior region
+  - Left anterior region
+  - Left middle region
+  - Left posterior region
+
+extraaxial_spaces: &extraaxial_spaces
+  - Superior falx
+  - Inferior falx
+  - Right tentorial leaflet
+  - Left tentorial leaflet
+  - Right cerebellar sulci
+  - Left cerebellar sulci
+  - Right superior region
+  - Right lateral region
+  - Left superior region
+  - Left lateral region
+
+parenchyma: &parenchyma
+  - Right cerebellar hemisphere
+  - Right cerebellar peduncles
+  - Left cerebellar hemisphere
+  - Left cerebellar peduncles
+  - Vermis
+  - Medulla
+  - Pons
+  - Midbrain
+  - Right
+  - Caudate
+  - Lentiform nucleus
+  - Thalamus
+  - Insula
+  - Internal capsule
+  - External capsule
+  - Left
+  - Caudate
+  - Lentiform nucleus
+  - Thalamus
+  - Insula
+  - Internal capsule
+  - External capsule
+  - Right
+  - Parieto-occipital region
+  - Fronto-temporal region
+  - Frontal region
+  - Left
+  - Frontal region
+  - Fronto-temporal region
+  - Parieto-occipital region
+  - White matter
+  - Pituitary gland
+  - Pineal gland
+
+ventricular_system: &ventricular_system
+  - Right lateral ventricle
+  - Frontal horn
+  - Body
+  - Occipital horn
+  - Temporal horn
+  - Left lateral ventricle
+  - Temporal horn
+  - Occipital horn
+  - Body
+  - Frontal horn
+  - Third ventricle
+  - Cerebral acqueduct
+  - Fourth ventricle
+  - Foramen of Magendie
+  - Foramina of Luschka
+
+intracranial_arteries: &intracranial_arteries
+  - Right vertebral artery
+  - Left vertebral artery
+  - Basilar artery
+  - Right
+  - ICA
+  - MCA
+  - ACA
+  - Left
+  - ICA
+  - MCA
+  - ACA
+
+dural_venous_sinuses: &dural_venous_sinuses
+  - Superior sagittal sinus
+  - Right transverse/sigmoid sinus
+  - Left transverse/sigmoid sinus
+  - Straight sinus and vein of Galen
+  - Internal cerebral veins
+  - Right basal vein of Rosenthal
+  - Left basal vein of Rosenthal
+
+skull_base: &skull_base
+  - Optic chiasm
+  - Right skull base
+  - Optic canal
+  - Superior orbital fissure
+  - Foramen rotundum
+  - PPF
+  - Inferior orbital fissure
+  - Vidian canal
+  - Foramen ovale
+  - Foramen spinosum
+  - Meckel's cave
+  - IAC
+  - Jugular foramen
+  - Hypoglossal canal
+  - Left skull base
+  - Optic canal
+  - Superior orbital fissure
+  - Foramen rotundum
+  - PPF
+  - Inferior orbital fissure
+  - Vidian canal
+  - Foramen ovale
+  - Foramen spinosum
+  - Meckel's cave
+  - IAC
+  - Jugular foramen
+  - Hypoglossal canal
+  
 studies:
-  var1:
-    - *sinuses
-    - *upper_facial_bones
-    - *orbits
-    - just some test in var1
-  var2:
-    - *sinuses
+  ct_head:
     - *facial_skin
-    - just some test in var2
+    - *facial_bones
+    - *sinuses
     - *orbits
+    - *nasal_cavity
+    - *nasopharynx
+    - *salivary_glands
+    - *masticator_spaces
+    - *parapharyngeal_spaces
+    - *extracranial_soft_tissues
+    - *calvarium_and_temporal_bones
+    - *basal_cisterns
+    - *extraaxial_spaces_axial
+    - *parenchyma
+    - *ventricular_system
+    - *intracranial_arteries
+    - *dural_venous_sinuses
+    - *skull_base
+  ct_neck:
+    - *extracranial_soft_tissues
+    - *calvarium_and_temporal_bones
+    - *basal_cisterns
+    - *extraaxial_spaces_axial
+    - *parenchyma
+    - *ventricular_system
+    - *intracranial_arteries
+    - *dural_venous_sinuses
+    - *skull_base
+    - *facial_skin
+    - *facial_bones
+    - *sinuses
+    - *orbits
+    - *nasal_cavity
+    - *nasopharynx
+    - *salivary_glands
+    - *masticator_spaces
+    - *parapharyngeal_spaces
+    - *mandible
+    - *oral_cavity
+    - *oropharynx
+    - *hypopharynx
+    - *larynx
+    - *trachea
+    - *thyroid
+    - *extracranial_arteries
+    - *extracranial_veins
+    - *cervical_lymph_nodes
+    - *cervical_spine
+    - *lung_apices
