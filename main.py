@@ -9,7 +9,15 @@ def main():
 
     # Create directory if it doesn't exist.
     output_dir = "Search Patterns"
-    os.makedirs(output_dir, exist_ok=True)
+
+    # Empty the output directory if it exists
+    if os.path.exists(output_dir):
+        for file in os.listdir(output_dir):
+            file_path = os.path.join(output_dir, file)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+    else:
+        os.makedirs(output_dir)
 
     # Load studies.
     studies = data["studies"]
