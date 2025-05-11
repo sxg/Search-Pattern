@@ -372,6 +372,82 @@ skull_base: &skull_base
   - Hypoglossal canal
   
 studies:
+  ct_head_lite:
+    - Facial skin
+    - Facial bones
+    - Sinuses
+    - Right orbit
+    - Left orbit
+    - Nasal cavity
+    - Nasopharynx
+    - Salivary glands
+    - Masticator spaces
+    - Parapharyngeal spaces
+    - Right scalp soft tissues
+    - Left scalp soft tissues
+    - Occipital scalp
+    - Parieto-occipital calvarium
+    - Temporal bones
+    - Basal cisterns
+    - Extra-axial spaces
+    - Cerebellum
+    - Brainstem
+    - Basal ganglia
+    - Cerebrum
+    - Pituitary
+    - Pineal
+    - Ventricles
+    - Posterior circulation
+    - Anterior circulation
+    - Cerebral venous sinuses
+    - Skull base
+  ct_neck_lite:
+    - Right scalp soft tissues
+    - Left scalp soft tissues
+    - Occipital scalp
+    - Parieto-occipital calvarium
+    - Temporal bones
+    - Basal cisterns
+    - Extra-axial spaces
+    - Cerebellum
+    - Brainstem
+    - Basal ganglia
+    - Cerebrum
+    - Pituitary
+    - Pineal
+    - Ventricles
+    - Posterior circulation
+    - Anterior circulation
+    - Cerebral venous sinuses
+    - Skull base
+    - Facial skin
+    - Facial bones
+    - Sinuses
+    - Right orbit
+    - Left orbit
+    - Nasal cavity
+    - Nasopharynx
+    - Salivary glands
+    - Masticator spaces
+    - Parapharyngeal spaces
+    - Mandible
+    - Teeth and gingiva
+    - Anterior tongue
+    - Oropharynx
+    - Hypopharynx
+    - Larynx
+    - Thyroid
+    - Subclavian arteries
+    - Vertebral arteries
+    - Carotid arteries
+    - Subclavian veins
+    - Internal jugular veins
+    - Pulmonary arteries
+    - Cervical lymph nodes
+    - Cervical spine
+    - Upper extremities
+    - Chest wall
+    - Lung apices
   ct_head:
     - *facial_skin
     - *facial_bones
